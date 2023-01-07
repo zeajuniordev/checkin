@@ -4,23 +4,6 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Date from '../components/date';
 
-// export default function Home() {
-//   return (
-//     <Layout home>
-//       <Head>
-//         <title>{siteTitle}</title>
-//       </Head>
-//       <section className={utilStyles.headingMd}>
-//         <p>Aliquam facilisis velit eu hendrerit accumsan. Duis cursus tempus ipsum maximus eleifend. Quisque vel nunc augue. Pellentesque semper aliquam nunc porttitor convallis. Nullam tempus a nisi sed viverra. </p>
-//         <p>
-//           (This is a sample website - you’ll be building a site like this on{' '}
-//           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-//         </p>
-//       </section>
-//     </Layout>
-//   );
-// }
-
 import { getSortedPostsData } from '../lib/posts';
 
 export async function getStaticProps() {
@@ -40,7 +23,11 @@ export default function Home({ allPostsData }) {
 
       {/* Add this <section> tag below the existing <section> tag */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>MAO | Transformación y Desarrollo Personal</h2>
+        <h3 className={utilStyles.subtittle}>Quiero ser siempre alguien nuevo</h3>
+        <h4 className={utilStyles.subtittle}>&#9889; Conferencista-Coach</h4>
+        <h4 className={utilStyles.subtittle}>&#9889; Oficio tu Boda Espiritual</h4>
+        <p className={utilStyles.paragraph}>Vamos hacer el trabajo de transformanos y brillar como una &#11088;</p>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
