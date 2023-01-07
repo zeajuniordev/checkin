@@ -24,7 +24,7 @@ export default function Home({ allPostsData }) {
       {/* Add this <section> tag below the existing <section> tag */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>MAO | Transformación y Desarrollo Personal</h2>
-        <h3 className={utilStyles.subtittle}>Quiero ser siempre alguien nuevo</h3>
+        <h3 className={utilStyles.subtittle1}>Quiero ser siempre alguien nuevo</h3>
         <h4 className={utilStyles.subtittle}>&#9889; Conferencista-Coach</h4>
         <h4 className={utilStyles.subtittle}>&#9889; Oficio tu Boda Espiritual</h4>
         <p className={utilStyles.paragraph}>Vamos hacer el trabajo de transformanos y brillar como una &#11088;</p>
