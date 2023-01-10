@@ -4,8 +4,8 @@ import Link from 'next/link';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css'
 
-const name = 'Mao Agudelo';
-export const siteTitle = 'Blog Mao Agudelo';
+const name = 'CheckIn Sostenible';
+export const siteTitle = 'Blog CheckIn Sostenible';
 
 export default function Layout({ children, home  }) {
     console.log("home", home)
@@ -33,7 +33,7 @@ export default function Layout({ children, home  }) {
                     <>
                         <Image
                             priority
-                            src="/images/profile.jpg"
+                            src="/images/profile.png"
                             className={utilStyles.borderCircle}
                             height={200}
                             width={200}
